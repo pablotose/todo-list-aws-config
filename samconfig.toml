@@ -3,6 +3,8 @@ version = 0.1
 [default.deploy.parameters]
 stack_name = "todo-list-aws"
 region = "us-east-1"
-parameter_overrides = "Stage=staging"
-confirm_changeset = false
+resolve_s3 = true
 capabilities = "CAPABILITY_IAM"
+confirm_changeset = false
+fail_on_empty_changeset = false
+parameter_overrides = "Stage=staging"
